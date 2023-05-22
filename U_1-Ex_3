@@ -1,0 +1,43 @@
+package mayank;
+
+import java.util.*;
+
+class Room {
+   int roomno;
+   String roomtype,roomarea,acmachine;
+   void setData()
+   {
+	   Scanner input = new Scanner(System.in);
+	   Scanner sc = new Scanner(System.in);
+			   System.out.println("Enter Room no = ");
+			   roomno = input.nextInt();
+			   System.out.println("Enter Room Type = ");
+			   roomtype = sc.nextLine();
+			   System.out.println("Enter Room Area = ");
+			   roomarea = sc.nextLine();
+			   System.out.println("Enter AC machine = ");
+			   acmachine = sc.nextLine();
+   }
+   void displayData()
+   {
+	   System.out.println("Room No : "+roomno);
+	   System.out.println("Room Type : "+roomtype);
+	   System.out.println("Room Area : "+roomarea);
+	   System.out.println("AC Machine : "+acmachine);
+   }
+}
+public class MainRoom{
+	public static void main(String[] args) {
+		Room r = new Room();
+		r.setData();
+		r.displayData();
+	}
+}
+
+
+OUTPUT : 
+
+Room No : 7
+Room Type : er
+Room Area : rop
+AC Machine : jhjg
