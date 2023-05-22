@@ -1,0 +1,28 @@
+// Create a Class "SimpleObject" and display msg by using constructor of this class.
+
+package mayank;
+
+class SimpleObject
+{
+	  SimpleObject()
+	  {
+		  System.out.println("I am in class Simple Object default constructor");
+	  }
+	  SimpleObject(int a)
+	  {
+		  System.out.println("I am in super class parameterized constructor");
+	  }
+}
+public class MainSimple {
+  public static void main(String[] args)
+  {
+	  new SimpleObject();
+	  new SimpleObject(100);
+  }
+}
+
+
+OUTPUT : 
+
+I am in class Simple Object default constructor
+I am in super class parameterized constructor
