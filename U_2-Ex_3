@@ -1,0 +1,36 @@
+class A
+{
+	String msg="hello i am in class";
+	void getmsg() {
+		System.out.println(msg);
+	}
+}
+class B extends A
+{
+	void getBmsg()
+	{
+		System.out.println("this is new msg by class B");
+	}
+}
+class C extends B
+{
+	C()
+	{
+		System.out.println("this is class C");
+	}
+}
+public class InheritanceEx {
+	public static void main(String[] args) {
+		C c1= new C();
+		c1.getmsg();
+		c1.getBmsg();
+	}
+
+}
+
+
+OUTPUTS:
+
+this is class C
+hello i am in class
+this is new msg by class B
