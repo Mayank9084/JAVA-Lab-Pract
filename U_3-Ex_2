@@ -1,0 +1,45 @@
+package exceptionhandling;
+class Voter
+{
+	int age;
+	void Voter(int age)
+	{
+		this.age=age;
+	}
+	boolean checkAge() throws Exception
+	{
+		if(age<18)
+		{
+			throw new Exception("age should be greater then 18");
+		}
+		else
+		{
+			return true;
+		}
+	}
+	void checkValidity() throws Exception
+	{
+		if(checkAge())
+		{
+			System.out.println("you can vote");
+		}
+	}
+}
+public class CustomException {
+   public static void main(String[] args) {
+	   Voter v= new Voter();
+	   v.Voter(18);
+	   //TODO Auto-generated method stub
+	   try {
+		   v.checkValidity();
+	   }catch(Exception e) {
+		   //TODO Auto-generated catch block
+		   e.printStackTrace();
+	   }
+   }
+}
+
+OUTPUT : 
+
+you can vote
+
